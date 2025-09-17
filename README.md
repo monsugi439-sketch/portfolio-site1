@@ -1,1 +1,136 @@
 # portfolio-site1
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US HIPHOP アーティスト紹介</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">LOADING</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1>US HIPHOP アーティスト紹介</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">ホーム</a></li>
+                    <li><a href="#artists">アーティスト</a></li>
+                    <li><a href="#about">サイトについて</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="video/21savage Post Malone rockstar.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h2 class="hero-title">現代の<br>US HIPHOP<br>sean</h2>
+            <p class="hero-subtitle">トップアーティストたちの音楽とストーリー</p>
+            <a href="#artists" class="scroll-down">
+                <span>Explore Artists</span>
+                <div class="scroll-arrow"></div>
+            </a>
+        </div>
+    </section>
+
+    <main>
+        <section id="artists" class="artist-section">
+            <h2 class="section-title">Featured Artists</h2>
+            <div class="artist-grid">
+            <div class="artist-card" data-scroll>
+                <a href="artists/drake.html">
+                    <div class="card-content">
+                        <img src="img/Drake.jpg" alt="Drake" loading="lazy">
+                        <h3>Drake</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/kendrick-lamar.html">
+                    <div class="card-content">
+                        <img src="img/kendrick lamar.jpg" alt="Kendrick Lamar" loading="lazy">
+                        <h3>Kendrick Lamar</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/travis-scott.html">
+                    <div class="card-content">
+                        <img src="img/travis scott.jpg" alt="Travis Scott" loading="lazy">
+                        <h3>Travis Scott</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/post-malone.html">
+                    <div class="card-content">
+                        <img src="img/post malone.jpg" alt="Post Malone" loading="lazy">
+                        <h3>Post Malone</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/21-savage.html">
+                    <div class="card-content">
+                        <img src="img/21savage.jpg" alt="21 Savage" loading="lazy">
+                        <h3>21 Savage</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/j-cole.html">
+                    <div class="card-content">
+                        <img src="img/j.cole.jpg" alt="J. Cole" loading="lazy">
+                        <h3>J. Cole</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/king-von.html">
+                    <div class="card-content">
+                        <img src="img/king von.jpg" alt="King Von" loading="lazy">
+                        <h3>King Von</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/lil-durk.html">
+                    <div class="card-content">
+                        <img src="img/lil durk.jpg" alt="Lil Durk" loading="lazy">
+                        <h3>Lil Durk</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="artist-card" data-scroll>
+                <a href="artists/polo-g.html">
+                    <div class="card-content">
+                        <img src="img/polo g.jpg" alt="Polo G" loading="lazy">
+                        <h3>Polo G</h3>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 US HIPHOP アーティスト紹介</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
